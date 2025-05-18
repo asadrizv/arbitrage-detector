@@ -1,0 +1,10 @@
+version: '3'
+services:
+  arbitrage:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - data:/app
+volumes:
+  data:
